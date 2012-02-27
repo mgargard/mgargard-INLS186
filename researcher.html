@@ -6,9 +6,11 @@
 </head>
 <body>
 <div class="main">
+<br />
 <a href="all-researchers.html">Researchers</a>&nbsp;&nbsp;
 <a href="all-publications.html">Publications</a>&nbsp;&nbsp;
 <a href="find-researcher.html">Find Researcher</a>
+
 <div id="researchers">
 <h3>Researcher</h3>
 <ol>
@@ -16,12 +18,16 @@
 </ol> 
 </div>
 
+<a href="researcher-publications.html"> Publications by Tyler Miles Thompson</a>
+
+<div class="divform">
 <h3>Update Researcher Information</h3>
-<form action="/researchers/{researcherID}" method="PUT">
+<form name="updateresearcher" action="/researchers/{researcherID}" method="POST">
 Researcher ID: <input type=“text” name=“researcherID” /><br /><br />
 Researcher Name: <input type=“text” name=“researchername” /><br />
   <input type="button" value="Submit" />
 </form>	
+</div> 
 </div>
 
 </body>

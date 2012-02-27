@@ -10,11 +10,15 @@
 <a href="all-researchers.html">Researchers</a>&nbsp;&nbsp;
 <a href="all-publications.html">Publications</a>&nbsp;&nbsp;
 <a href="find-researcher.html">Find Researcher</a>
+
 <div id="researchers">
 <h3>Find Researcher</h3>
-<form method=“get” action=“GET”>
-by Researcher Name: <input type=“text” name=“researcherID”/><br /><br />
-by Researcher ID: <input type=“text” name=“researcherID”/><br />
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="GET">
+<input type=“text” name=“field”/><br />
+<input type="radio" name="group1" value="researcherID" />Researcher ID
+<input type="radio" name="group1" value="researchername" />Researcher Name
+<input type="radio" name="group1" value="field" /> Field<br /><br />
 <input type="button" value="Submit"/>
 </form>
 

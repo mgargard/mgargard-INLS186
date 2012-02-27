@@ -1,0 +1,33 @@
+---------------------------------------------------------------------
+OVERVIEW
+---------------------------------------------------------------------
+The Researcher-Publication collection includes information on researchers from different fields and their related publications. The functionality in these files will allow users to access the information from this collection. 
+
+
+---------------------------------------------------------------------
+ATTRIBUTES and LINKS
+---------------------------------------------------------------------
+Classes:
+<div class="main"> This is the main container for a page and it encapsulates all of the page elements and data. 
+<div id="researchers"> This is a container for the researcher list and researcher search form. Styles for elements in the div will be defined in an external stylesheet.
+<div id="publications">This is a container for the publication list and publication search form. Styles for elements in the div will be defined in an external stylesheet.
+<div class="divform"> This block is used to contain and format all of the forms in the various files. 
+
+
+Links:
+<a href="researcher.html"> A link to a specific researcher's page. Idempotent link using GET to access a researcherID from the collection like (/researchers/{researchername}.  
+<a href="all-researchers.html"> A link to the researhers' page with a list of all researchers. Idempotent link using GET to obtain all researchers information like (/researchers). 
+<a href="all-publications.html"> A link to the publishers' page with a list of all publishers. Idempotent link using GET to obtain all publishers information like (/publications). 
+<a href="find-researcher.html"> A link to a page where users can search for researchers by (researcherID, researcherName and field).
+<a href="researcher-publications.html">  A link to a page with a list of publications for the selected researcher. Idempotent link using GET to obtain the publications like (/researchers/{researcherID}/publications).
+
+Forms:
+name="updateresearcher"- Form will use PUT to update a researcher's information.
+name="findresearcher" - Form will use GET to find researcher by ID, name or field.
+name="addresearcher" - Form will use POST to add a researcher to the collection. It will also use PUT to update a researcher's information. 
+name="viewpub" - Form will use GET to find researchers by given field. 
+name="addpub" - Form will use POST to add a publication to the collection.
+
+Block elements:
+<div> was used to create element groups.
+<br /> was used to add a line break between elements.

@@ -10,6 +10,7 @@
 <a href="all-researchers.html">Researchers</a>&nbsp;&nbsp;
 <a href="all-publications.html">Publications</a>&nbsp;&nbsp;
 <a href="find-researcher.html">Find Researcher</a>
+<div id="publications">
 <h3>All Publications</h3>
 <ol>
 <li>Advances in Information Science</li> 
@@ -25,18 +26,27 @@
 <li>GENETIC ANALYSIS OF NEURODEGENERATION</li>
 <li>GENETICS AND CANCER PREVENTION</li>
 </ol> 
-</div> 
+
 
 <br />
-<div id="addpublication">
+<div class="divform">
+<h3>View publication by field</h3>
+<form name="viewpub" method=“GET” action="find?researcherfield={field} {+researchername">
+Enter field of study: <input type=“text” name=“field”/><br />
+<input type="button" value="Submit"/>
+</form>
+</div> 
+<br />
+
+<div class="divform">
 <h3>Add Publication</h3>
-<form method=“post” action=“/publications”>
+<form name="addpub" method=“POST” action=“/publications”>
 Publication ID: <input type=“text” name=“publicationID” /><br /><br />
 Publication Name: <input type=“text” name=“researchername” /><br />
 <input type="button" value="Submit" />
 </form>
 </div>
-
+</div>
 </div>
 
 </body>
